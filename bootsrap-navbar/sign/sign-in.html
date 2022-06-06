@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/gallery.min.css" />
+    <link rel="stylesheet" href="../icons/icons.css" />
+    <link rel="stylesheet" href="../css/jquery-ui.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./sign-in.css" />
+    <link rel="icon" href="../img/logo_coderX.jpg" />
+    <title>Sign in</title>
+  </head>
+
+  <body>
+    <header>
+      <nav
+        id="navigation"
+        class="navbar navbar-expand-md navbar-my-color align-items-center fixed-top"
+      >
+        <a href="../index.html" class="navbar-brand">
+          <img src="../img/logo_coderX.jpg" alt="pic" class="logo my-icon" />
+        </a>
+        <a href="#0" class="scroll_a white">Brand</a>
+        <button
+          class="navbar-toggler third-button"
+          type="button"
+          data-toggle="collapse"
+          data-target="#NavbarToggleDemo01"
+          aria-controls="NavbarToggleDemo01"
+          aria-expanded="false"
+          aria-label="Toggle-navigation"
+        >
+          <div class="animated-icon3">
+            <span></span><span></span><span></span>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="NavbarToggleDemo01">
+          <ul class="navbar-nav mr-auto mt-lg-0">
+            <li class="nav-item-active">
+              <a
+                href="./placeholder/placeholder.html"
+                class="nav-link scroll_a white"
+                >Gallery</a
+              >
+              <span class="sr-only"></span>
+            </li>
+            <li class="nav-item">
+              <a href="#0" class="nav-link scroll_a white">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="./sign-up.html" class="nav-link scroll_a white"
+                >Sign-up</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex align-items-center ml-auto my-2 my-lg-0">
+            <input
+              id="tags"
+              class="form-control mr-sm-2 my-input custom_search"
+              type="search"
+              placeholder="Search"
+            />
+            <button class="btn btn my-2 my-sm-0 ml-2 custom_btn" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <div class="sign_in_body">
+      <div class="sign_in_card">
+        <form action="" class="form_body">
+          <div class="h4 pb-1 text-light">Sign-in</div>
+          <div class="form-group">
+            <input
+              id="id_username"
+              type="email"
+              class="form-control sign_in_input"
+              maxlength="30"
+              placeholder="Enter email"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              id="id_password"
+              type="password"
+              class="form-control sign_in_input"
+              maxlength="30"
+              placeholder="Password"
+            />
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label
+              class="form-check-label small text-light pb-3"
+              for="exampleCheck1"
+              >Check me out</label
+            >
+          </div>
+          <button id="sent" type="submit" class="btn btn-sm btn-success w-100">
+            Submit
+          </button>
+
+          <div class="m-auto d-flex justify-content-between px-1 pt-3">
+            <a
+              href="./reset.html"
+              class="text-light text-monospace text-decoration-none"
+              >Reset Password</a
+            >
+            <a
+              href="./sign-up.html"
+              class="text-light text-monospace text-decoration-none"
+              >Free Sign-up</a
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- ! bootstrap js link. -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/gallery.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#sent").prop("disabled", true);
+        $("#id_username").keyup(function () {
+          ToggleButton();
+        });
+        $("#id_password").keyup(function () {
+          ToggleButton();
+        });
+      });
+      function ToggleButton() {
+        if ($("#id_username").val() != "" && $("#id_password").val() != "") {
+          $("#sent").prop("disabled", false);
+          return true;
+        } else {
+          $("#sent").prop("disabled", true);
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

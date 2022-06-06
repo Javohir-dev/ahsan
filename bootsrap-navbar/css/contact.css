@@ -1,0 +1,94 @@
+body {
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.my_about {
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll_a {
+  color: #fff !important;
+}
+
+.scroll_a:hover {
+  color: #5E2B08 !important;
+}
+
+.navbar-my-color {
+  background: #0000003f;
+}
+/* !=== iframe ===============================  */
+.map-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+
+/* !==================================  */
+
+.container_my {
+  margin-top: 13%;
+}
+
+.data_form {
+  background: #00000075;
+  background-image: url(../img/sign-image.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.form_my {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.input_data_my {
+  margin: 13px 0;
+  padding: 10px 5px;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid #fff;
+  background: transparent;
+  transition: .3s;
+}
+
+.input_data_my:focus {
+  background-color: #ffffff60;
+}
+
+.input_data_my::-webkit-input-placeholder {
+  color: white;
+}
+
+.btn_data_my {
+  font-weight: 500;
+  color: #000;
+  border: 1px solid #000;
+  background-color: #ffffffcc;
+}
+
+.btn_data_my:hover {
+  background-color: #ffffffef;
+}

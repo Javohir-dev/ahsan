@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/gallery.min.css" />
+    <link rel="stylesheet" href="./icons/icons.css" />
+    <link rel="stylesheet" href="./css/jquery-ui.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="icon" href="./img/logo_coderX.jpg" />
+    <title>Office</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        id="navigation"
+        class="navbar navbar-expand-md navbar-my-color align-items-center fixed-top"
+      >
+        <a href="./index.html" class="navbar-brand">
+          <img src="./img/logo_coderX.jpg" alt="pic" class="logo my-icon" />
+        </a>
+
+        <a href="#0" class="scroll_a">Brand</a>
+
+        <button
+          class="navbar-toggler third-button"
+          type="button"
+          data-toggle="collapse"
+          data-target="#NavbarToggleDemo01"
+          aria-controls="NavbarToggleDemo01"
+          aria-expanded="false"
+          aria-label="Toggle-navigation"
+        >
+          <div class="animated-icon3">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="NavbarToggleDemo01">
+          <ul class="navbar-nav mr-auto mt-lg-0">
+            <li class="nav-item-active">
+              <a
+                href="./placeholder/placeholder.html"
+                class="nav-link scroll_a"
+                >Gallery</a
+              >
+              <span class="sr-only"></span>
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="nav-link scroll_a"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./sign/sign-in.html"
+                target="blank"
+                class="nav-link scroll_a"
+                >Sign-in</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./sign/sign-up.html"
+                target="blank"
+                class="nav-link scroll_a"
+                >Sign-up</a
+              >
+            </li>
+          </ul>
+
+          <form class="d-flex align-items-center ml-auto my-2 my-lg-0">
+            <input
+              id="tags"
+              class="form-control mr-sm-2 my-input custom_search"
+              type="search"
+              placeholder="Search"
+            />
+            <button class="btn btn my-2 my-sm-0 ml-2 custom_btn" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <main class="main_my">
+      <div class="container-md container_my">
+        <div class="row d-flex m-auto justify-content-center align-items-stretch shadow">
+          <div class="col-md-6 data_form py-3">
+            <h2 class="text-light">Nimadir</h2>
+            <div class="data">
+              <form action="" class="d-flex form_my">
+                <input
+                  type="text"
+                  name="UserName"
+                  id="UserName"
+                  placeholder="Your name"
+                  class="input_data_my"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="UserEmail"
+                  placeholder="Your email"
+                  class="input_data_my"
+                />
+                <input
+                  type="password"
+                  name="UserPassword"
+                  id="UserPassword"
+                  placeholder="Your password"
+                  class="input_data_my"
+                />
+                <textarea
+                  name="massage"
+                  id="massage"
+                  rows="1"
+                  placeholder="Your massage"
+                  class="input_data_my"
+                ></textarea>
+                <button
+                  type="submit"
+                  id="sent"
+                  class="btn input_data_my btn_data_my py-2 px-2 my-1"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+          <div
+            id="map-container-google-1"
+            class="z-depth-1-half map-container col-md-6"
+            style="height: 400px"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191884.74398355218!2d69.13928089015967!3d41.282770556737866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQsNGI0LrQtdC90YIsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1587329158358!5m2!1sru!2s"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ! bootstrap js link. -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/gallery.min.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#sent").prop("disabled", true);
+        $("#UserEmail").keyup(function () {
+          ToggleButton();
+        });
+        $("#UserPassword").keyup(function () {
+          ToggleButton();
+        });
+        $("#massage").keyup(function () {
+          ToggleButton();
+        });
+      });
+      function ToggleButton() {
+        if (
+          $("#UserEmail").val() != "" &&
+          $("#UserPassword").val() != "" &&
+          $("#massage").val() != ""
+        ) {
+          $("#sent").prop("disabled", false);
+          return true;
+        } else {
+          $("#sent").prop("disabled", true);
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
