@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <button class="btn">
+            <a href="index.html" title="Return to home page">&#8598; Back</a>
+        </button>
+    </div>
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora dolorum placeat amet
+            temporibus
+            cupiditate deserunt harum perferendis debitis nemo.
+        </p>
+            <button class="btn__button">Preview</button>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(to right, #46448C, #F77776);
+        }
+
+        .box {
+            width: 100%;
+            height: 84vh;
+            border-radius: 0 0 10vh 10vh;
+            background-image: url(./img/img1.jpg);
+            background-position: center center;
+            background-size: cover;
+        }
+
+
+        .btn {
+            margin: 20px;
+            border: none;
+            background: initial;
+        }
+
+        .btn>a {
+            padding: 10px;
+            border-radius: 20px;
+            outline: none;
+            font-weight: 600;
+            font-family: sans-serif;
+            color: blue;
+            background-color: #ffffff77;
+            text-decoration: none;
+            transition: .4s;
+        }
+
+        .btn>a:hover {
+            color: red;
+        }
+
+        .text {
+            text-align: center;
+            padding: 5px 20px;
+            color: white;
+        }
+
+        .btn__button {
+            margin: 20px;
+            padding: 10px 25px;
+            border-radius: 10px;
+            border:none;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            box-shadow: 2px 2px 20px #fff;
+            background-image: linear-gradient(to left, #ff0073, #003985, #ff0073);
+            background-size: 200%;
+            transition: .6s;
+        }
+
+        .btn__button:hover {
+            background-position:-100px;
+        }
+    </style>
+</body>
+
+</html>
