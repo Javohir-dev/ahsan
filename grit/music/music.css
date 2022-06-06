@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+  background-color: #f1f1ff
+}
+
+.music_list_body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  max-width: 1280px;
+}
+
+.music_card {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 10px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 0px 30px 0px silver;
+}
+
+.down_link {
+  padding: 5px 10px;
+  color: aqua;
+  text-decoration: none;
+  width: 100px;
+  background-color: rgb(0, 0, 0, 0.60);
+  margin: auto;
+  margin-bottom: 5px;
+  display: block;
+  border: solid 1px aqua;
+  border-radius: 5px;
+}

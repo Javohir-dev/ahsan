@@ -1,0 +1,104 @@
+body {
+  background-color: silver;
+  font-family: sans-serif;
+
+  background: url(../img/bg.jpg)
+  no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+}
+
+.profile_card_header {
+  width: 100vw;
+  height: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.profile_card_body {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  max-width: 300px;
+  border-radius: 5px;
+  border: solid 1px aqua;
+  backdrop-filter: blur(10px);
+  background-color: rgb(0, 0, 0, 0.20);
+  box-shadow: 0px 0px 30px 0px aqua;
+}
+
+.profile_img {
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: solid 2px aqua;
+}
+
+.profile_card_body_text {
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: dashed 1px aqua;
+  background-color: rgb(0, 0, 0, 0.20);
+}
+
+.profile_date {
+  font-family: monospace;
+}
+
+.user_status {
+  color: lime;
+  display: flex;
+  margin-top: 5px;
+}
+
+.my_icon {
+  width: 5px;
+  height: 5px;
+  padding: 2px;
+  border-radius: 50%;
+  border: solid 2px lime;
+  -webkit-animation: move 1s infinite;
+  animation: move 1s infinite;
+  vertical-align: middle;
+}
+
+@-webkit-keyframes move {
+  from {background-color: white ;}
+  to {background-color: black;}
+}
+
+@keyframes move {
+  from {background-color: white;}
+  to {background-color: black;}
+}
+
+a {
+  text-decoration: none;
+}
+
+.row_btn {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.profile_update {
+  color: lightblue;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 6px 20px;
+  border: solid 1px lightblue;
+  background-color: rgb(0, 0, 0, 0.50);
+}
+
+.profile_logout {
+  color: red;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 6px 20px;
+  border: solid 1px red;
+  background-color: rgb(0, 0, 0, 0.50);
+}
