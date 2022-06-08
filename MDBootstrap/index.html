@@ -7,18 +7,41 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
+    <title>MDBootstrap</title>
     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/mdb.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <header class="d-flex justify-content-center">
+      <div class="card w-100 bg-white my_card overflow-hidden">
+        <div class="my_image waves-effect waves-light">
+          <img src="./img/img1.jpg" class="w-100" alt="foto" />
+        </div>
+        <h1 class="card-title px-2">Card title</h1>
+        <p class="px-2">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Consequuntur, sunt.
+        </p>
+        <button
+          type="submit"
+          class="btn btn-blue border-0 w-50 text-white py-2 px-3 mx-2 mb-3 my_btn shadow"
+        >
+          Submit
+        </button>
+      </div>
+    </header>
 
+    <!-- ! JavoScript links -->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/mdb.min.js"></script>
-    <script></script>
+    <script>
+      $(document).ready(function () {
+        new WOW().init();
+      });
+    </script>
   </body>
 </html>
