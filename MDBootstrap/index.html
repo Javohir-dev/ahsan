@@ -27,9 +27,43 @@
           type="button"
           data-toggler="collapse"
           data-target="#BasicNavbar"
-          aria-label="Tpggle Navigation"
-        ></button>
+          aria-controls="BasicNavbar"
+          aria-expanded="False"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="BasicNavbar">
+          <li class="navbar-nav mt-1 mr-auto">
+            <ul class="nav-item">
+              <a href="#!" class="nav-link">Catigory</a>
+            </ul>
+          </li>
+          <form class="form-inline my-lg-0">
+            <input
+              type="search"
+              placeholder="Search"
+              class="form-control search-input"
+            />
+          </form>
+          <div class="mb-2 my-lg-0">
+            <div class="nav-item dropdown">
+              <a
+                href="#!"
+                class="nav-link ml-lg-2 p-0"
+                id="navbarDropdown"
+                role="button"
+                data-toggler="#dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img src="./img/" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
       </nav>
+      <div class=""></div>
     </header>
     <!-- ! JavoScript links -->
     <script src="js/jquery.min.js"></script>
