@@ -11,9 +11,60 @@ header,
     background-size: cover;
 }
 
+@media (min-width:560px) and (max-width: 650px) {
+    header .jarallax h5 {
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+.navbar {
+    z-index: 1050;
+    backdrop-filter: blur(1rem);
+    box-shadow: 0 0 20px purple;
+    background: transparent !important;
+}
+
+.top-nav-collapse {
+    box-shadow: 0 0 20px pink;
+    background-color: rgb(255, 255, 255, 0.90);
+}
+
 .logo {
     width: 30px;
     border-radius: 50%;
+}
+
+.nav-link {
+    color: purple !important;
+}
+
+.search_input {
+    border-radius: 5px;
+    color: pink !important;
+    box-shadow: none !important;
+    border: 1px solid purple;
+    background-color: transparent !important;
+}
+
+.search_input:focus {
+    color: pink !important;
+    border: 1px solid pink;
+}
+
+.search_input::-webkit-input-placeholder {
+    color: white !important;
+}
+
+.header_btn {
+    color: white;
+    border-radius: 5px;
+    border: 1px solid purple;
+    padding: 10px 60px !important;
+}
+
+.header_btn:hover {
+    color: #c7c7c7;
+    border: 1px solid indigo;
 }
 
 .user_img_my {
@@ -23,4 +74,64 @@ header,
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid purple;
+}
+
+.is_on {
+    width: 12px;
+    height: 12px;
+    margin: -13px 0 0 23px;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid purple;
+    background-color: lime;
+}
+
+.dropdown-menu {
+    border: none;
+    padding: 0 !important;
+    margin-top: 10px !important;
+    box-shadow: 0 0 20px pink;
+    background-color: rgb(255, 255, 255, 0.60);
+}
+
+.input_number {
+    outline: none;
+    width: 60px;
+    padding: 5px;
+    color: gray;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    vertical-align: middle;
+    border: 1px solid silver;
+}
+
+.input_number:focus {
+    color: limegreen;
+    border: 1px solid limegreen;
+}
+
+/* !=============================== */
+.header_alert {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.successfully-saved {
+    display: none;
+    color: white;
+    z-index: 1090;
+    margin-top: 5px;
+    position: fixed;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-family: monospace;
+    background-color: limegreen;
+    box-shadow: 0 0rem 2rem lime;
+    transition: 1s;
+}
+
+.successfully-saved.show {
+    display: block;
 }

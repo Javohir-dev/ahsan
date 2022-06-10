@@ -7,25 +7,29 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>MDBootstrap</title>
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <title>Mdbootstrap</title>
+    <link rel="icon" href="img/lg.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="./icons/icons.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="header_alert">
+      <div class="successfully-saved">Product aded successfully</div>
+    </div>
     <header>
       <nav
         class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar py-0"
       >
         <a href="./index.html" class="navbar-brand">
-          <img src="./img/mdb-favicon.ico" class="logo" alt="logo" />
+          <img src="./img/smart.png" class="logo" />
         </a>
 
         <button
           class="navbar-toggler"
           type="button"
-          data-toggler="collapse"
+          data-toggle="collapse"
           data-target="#BasicNavbar"
           aria-controls="BasicNavbar"
           aria-expanded="False"
@@ -33,19 +37,22 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="BasicNavbar">
           <ul class="navbar-nav mt-1 mr-auto">
             <li class="nav-item">
-              <a href="#!" class="nav-link">Catigory</a>
+              <a href="#0" class="nav-link"> Category </a>
             </li>
           </ul>
-          <form class="form-inline my-lg-0">
+
+          <form class="form-inline my-2 my-lg-0">
             <input
               type="search"
               placeholder="Search"
-              class="form-control search-input"
+              class="form-control search_input"
             />
           </form>
+
           <div class="mb-2 my-lg-0">
             <div class="nav-item dropdown">
               <a
@@ -58,6 +65,7 @@
                 aria-expanded="false"
               >
                 <img src="./img/user.png" class="user_img_my" />
+                <div class="is_on"></div>
               </a>
               <div
                 class="dropdown-menu dropdown-menu-right overflow-hidden"
@@ -70,32 +78,69 @@
           </div>
         </div>
       </nav>
+
       <div id="NavBack" class="view waves-effect waves-light">
         <div class="mask rgba-black-strong">
           <div
             class="container-fluid d-flex align-items-center justify-content-start h-100"
           >
             <div class="m-auto">
-              <div class="h3 co,-md-6 text-light">
+              <div class="h3 col-md-6 text-light">
                 <div class="text-uppercase mb-4">
                   Create a website you're proud of
                 </div>
-                <div class="text-muted mb-4">
+                <div class="text-muted h5 mb-4">
                   Discover the platform that gives you the freedom to create,
                   design, manage and develop your web presence exactly the way
                   you want.
                 </div>
-                <div class="px-2">
-                  <button class="btn btn-md header-btn">Sign-in</button>
-                  <button class="btn btn-md header-btn">Sign-in</button>
-                </div>
+              </div>
+
+              <div class="px-2">
+                <button class="btn btn-md header_btn">Sign-in</button>
+                <button class="btn btn-md header_btn">Sign-up</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <!-- ! JavoScript links -->
+    <main class="pt-4">
+      <div class="row d-flex m-auto justify-content-center">
+        <div class="col-md-3 wow fadeIn" data-wow-delay="100sm">
+          <div class="card shadow-lg">
+            <div class="waves-effect waves-block">
+              <img src="./img/smart.png" class="img-fluid" alt="smart" />
+            </div>
+
+            <div class="px-3">
+              <div class="d-flex justify-content-between">
+                <div class="text-muted">Smart watch</div>
+                <div class="text-success">55$</div>
+              </div>
+              <div class="small">Some quick example text to build on the</div>
+              <div class="d-flex justify-content-between">
+                <div class="mt-2">
+                  <input
+                    type="number"
+                    value="1"
+                    min="1"
+                    max="10"
+                    class="input_number"
+                  />
+                </div>
+                <button
+                  class="btn btn-md btn-success rounded shadow-none"
+                  id="add_cart"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -103,6 +148,14 @@
     <script>
       $(document).ready(function () {
         new WOW().init();
+      });
+      $(function () {
+        $("#add_cart").click(function () {
+          $(".successfully-saved")
+            .css("display", "block")
+            .delay(3000)
+            .fadeOut(500);
+        });
       });
     </script>
   </body>
