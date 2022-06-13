@@ -1,3 +1,28 @@
+:root {
+    --yellow: yellow;
+}
+
+body {
+    background-color: #868686;
+}
+
+nav.navbar {
+    background-color: #00000088 !important;
+}
+
+.nav-item a {
+    color: yellow !important;
+}
+
+.search_input {
+    color: var(--yellow) !important;
+    border-color: var(--yellow) !important;
+}
+
+.user_img_my {
+    border-color: var(--yellow);
+}
+
 .my_container {
     width: 100%;
     height: 100vh;
@@ -5,30 +30,26 @@
 }
 
 .containers {
-    height: 100%;
-    /* max-width: 650px; */
     margin: auto;
-    border: 3px solid #800080;
-    background: #000;
-}
-
-.basic_box_img .card{
-    width: 100%;
-    height: 400px;
-    background-color: #000;
+    background: transparent !important;
 }
 
 .my_images_gallary {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     margin-right: 5px;
+    cursor: pointer;
     z-index: 9999;
     overflow: hidden;
 }
 
+.my_images_gallary:hover {
+    opacity: 0.9;
+}
+
 .main-img {
     width: 100%;
-    height: 235px;
+    height: 400px;
     overflow: hidden;
 }
 
@@ -36,14 +57,14 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+
 }
 
 .imgs img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+
 }
 
 .imgs {
@@ -66,4 +87,9 @@
     .my_container {
         padding-top: 80px;
     }
+}
+
+/* ! left container ! */
+.visa_cards img {
+    width: 50px;
 }

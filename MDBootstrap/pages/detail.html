@@ -33,7 +33,7 @@
         aria-expanded="False"
         aria-label="Toggle Navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="symbol_burger">&#9776;</span>
       </button>
 
       <div class="collapse navbar-collapse" id="BasicNavbar">
@@ -109,7 +109,7 @@
 
               <div class="px-3">
                 <div class="d-flex justify-content-between">
-                  <div class="text-muted">MacBook Air</div>
+                  <div class="text-muted">MacBook Pro</div>
                   <div class="text-success">520$</div>
                 </div>
                 <div class="d-flex justify-content-between">
@@ -133,36 +133,45 @@
             </div>
           </div>
 
-          <div class="col-md-5 wow fadeIn" data-wow-delay="100sm">
+          <div class="col-md-5" data-wow-delay="100sm">
             <div class="card shadow-lg">
-              <div class="waves-effect waves-block card_img_my">
-                <img src="../img/mac2.jpg" class="img-fluid" alt="smart" />
+              <div class="visa_cards">
+                <img src="../img/visa.png" alt="visa" />
+                <img src="../img/master-card.png" alt="mastercart" />
               </div>
-
-              <div class="px-3">
-                <div class="d-flex justify-content-between">
-                  <div class="text-muted">MacBook Air</div>
-                  <div class="text-success">520$</div>
-                </div>
-                <div class="small">Our products are always guaranteed.</div>
-                <div class="d-flex justify-content-between">
-                  <div class="mt-2">
-                    <input
-                      type="number"
-                      value="1"
-                      min="1"
-                      max="10"
-                      class="input_number"
-                    />
-                  </div>
-                  <button
-                    class="btn btn-md btn-success rounded shadow-none add_cart"
-                    id="add_cart2"
-                  >
-                    Add to cart
-                  </button>
-                </div>
-              </div>
+              <form action="">
+                <label for="cart-number">Credit card number</label>
+                <input
+                  type="number"
+                  name="cart-number"
+                  id="CartNumber"
+                  placeholder="0123-4567-8901-2345"
+                />
+                <label for="cart-holden">card holder</label>
+                <input
+                  type="text"
+                  name="cart-holden"
+                  id="CartNumber"
+                  placeholder="Cardholder"
+                />
+                <label for="">expiration</label>
+                <input
+                  type="date"
+                  id="data"
+                  name="trip-start"
+                  value="2018-07-22"
+                  min="2018-01-01"
+                  max="2022-01-01"
+                />
+                <input
+                  type="date"
+                  id="data"
+                  name="trip-start"
+                  value="2018-07-22"
+                  min="2018-01-01"
+                  max="2002-01-01"
+                />
+              </form>
             </div>
           </div>
         </div>

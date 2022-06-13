@@ -42,6 +42,11 @@ header {
     background-color: var(--color2);
 }
 
+.symbol_burger {
+    font-size: 30px;
+    color: white;
+}
+
 .logo {
     width: 50px;
     border-radius: 50%;
