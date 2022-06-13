@@ -157,6 +157,26 @@ header {
     display: block;
 }
 
+/* ! search  !============= */
+.ui-menu {
+    z-index: 1500;
+    position: fixed;
+    padding-top: 10px;
+    background: transparent;
+    border-radius: 5px !important;
+}
+
+.ui-menu-item {
+    width: 100%;
+    padding: 5px 0;
+    max-width: 220px;
+    background-color: rgb(255, 255, 255, 0.60);
+}
+
+.ui-widget {
+    border: solid 1px transparent !important;
+}
+
 /* !============== */
 .card_img_my {
     width: 100%;

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Mdbootstrap</title>
+    <link rel="icon" href="../img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/jquery-ui.css" />
+    <link rel="stylesheet" href="../css/mdb.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./css/detail.css" />
+  </head>
+  <body>
+    <div class="header_alert">
+      <div class="successfully-saved">Product aded successfully</div>
+    </div>
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar py-0">
+      <a href="../index.html" class="navbar-brand">
+        <img src="../img/logo.png" class="logo" />
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#BasicNavbar"
+        aria-controls="BasicNavbar"
+        aria-expanded="False"
+        aria-label="Toggle Navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="BasicNavbar">
+        <ul class="navbar-nav mt-1 mr-auto">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link"> Home page </a>
+          </li>
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            id="tags"
+            type="search"
+            placeholder="Search"
+            class="form-control search_input"
+          />
+        </form>
+
+        <div class="mb-2 my-lg-0">
+          <div class="nav-item dropdown">
+            <a
+              href="#0"
+              class="nav-link ml-lg-2 p-0"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img src="../img/user.png" class="user_img_my" />
+              <div class="is_on"></div>
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right overflow-hidden"
+              aria-labelledby="navbarDropdown"
+            >
+              <a href="#0" class="dropdown-item"> Sign-in </a>
+              <a href="#0" class="dropdown-item"> Sign-up </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container-fluid">
+        <div class="row d-flex m-auto justify-content-center my_container">
+          <div class="col-md-7">
+            <div class="card shadow-lg">
+              <div class="">
+                <section class="">
+                  <div class="containers">
+                    <div class="main-img">
+                      <img src="../img/mac1.jpg" id="current" />
+                    </div>
+                    <div class="imgs">
+                      <div class="my_images_gallary">
+                        <img src="../img/mac1.jpg" />
+                      </div>
+                      <div class="my_images_gallary">
+                        <img src="../img/mac2.jpg" />
+                      </div>
+                      <div class="my_images_gallary">
+                        <img src="../img/mac3.webp" />
+                      </div>
+                      <div class="my_images_gallary">
+                        <img src="../img/mac4.jpg" />
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+
+              <div class="px-3">
+                <div class="d-flex justify-content-between">
+                  <div class="text-muted">MacBook Air</div>
+                  <div class="text-success">520$</div>
+                </div>
+                <div class="small">Our products are always guaranteed.</div>
+                <div class="d-flex justify-content-between">
+                  <div class="mt-2">
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      max="10"
+                      class="input_number"
+                    />
+                  </div>
+                  <button
+                    class="btn btn-md btn-success rounded shadow-none add_cart"
+                    id="add_cart2"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 wow fadeIn" data-wow-delay="100sm">
+            <div class="card shadow-lg">
+              <div class="waves-effect waves-block card_img_my">
+                <img src="../img/mac2.jpg" class="img-fluid" alt="smart" />
+              </div>
+
+              <div class="px-3">
+                <div class="d-flex justify-content-between">
+                  <div class="text-muted">MacBook Air</div>
+                  <div class="text-success">520$</div>
+                </div>
+                <div class="small">Our products are always guaranteed.</div>
+                <div class="d-flex justify-content-between">
+                  <div class="mt-2">
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      max="10"
+                      class="input_number"
+                    />
+                  </div>
+                  <button
+                    class="btn btn-md btn-success rounded shadow-none add_cart"
+                    id="add_cart2"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/mdb.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/main.js"></script>
+    <script></script>
+  </body>
+</html>
