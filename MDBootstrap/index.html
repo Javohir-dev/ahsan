@@ -8,7 +8,7 @@
     />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Mdbootstrap</title>
-    <link rel="icon" href="img/lg.png" type="image/x-icon" />
+    <link rel="icon" href="./img/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/mdb.min.css" />
     <link rel="stylesheet" href="./icons/icons.css" />
@@ -19,11 +19,9 @@
       <div class="successfully-saved">Product aded successfully</div>
     </div>
     <header>
-      <nav
-        class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar py-0"
-      >
+      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar py-0">
         <a href="./index.html" class="navbar-brand">
-          <img src="./img/smart.png" class="logo" />
+          <img src="./img/logo.png" class="logo" />
         </a>
 
         <button
@@ -47,6 +45,7 @@
 
           <form class="form-inline my-2 my-lg-0">
             <input
+              id="tags"
               type="search"
               placeholder="Search"
               class="form-control search_input"
@@ -79,17 +78,17 @@
         </div>
       </nav>
 
-      <div id="NavBack" class="view waves-effect waves-light">
-        <div class="mask rgba-black-strong">
+      <div id="NavBack" class="navback view waves-effect waves-light">
+        <div class="mask">
           <div
             class="container-fluid d-flex align-items-center justify-content-start h-100"
           >
             <div class="m-auto">
               <div class="h3 col-md-6 text-light">
-                <div class="text-uppercase mb-4">
+                <div class="text-uppercase mb-4 header_title_text">
                   Create a website you're proud of
                 </div>
-                <div class="text-muted h5 mb-4">
+                <div class="text-muted h5 mb-4 header_text_my">
                   Discover the platform that gives you the freedom to create,
                   design, manage and develop your web presence exactly the way
                   you want.
@@ -107,18 +106,18 @@
     </header>
     <main class="pt-4">
       <div class="row d-flex m-auto justify-content-center">
-        <div class="col-md-3 wow fadeIn" data-wow-delay="100sm">
+        <div class="col-lg-3 wow fadeIn" data-wow-delay="100sm">
           <div class="card shadow-lg">
-            <div class="waves-effect waves-block">
-              <img src="./img/smart.png" class="img-fluid" alt="smart" />
+            <div class="waves-effect waves-block card_img_my">
+              <img src="./img/mac1.jpg" class="img-fluid" alt="smart" />
             </div>
 
             <div class="px-3">
               <div class="d-flex justify-content-between">
-                <div class="text-muted">Smart watch</div>
+                <div class="text-muted">MacBook Pro</div>
                 <div class="text-success">55$</div>
               </div>
-              <div class="small">Some quick example text to build on the</div>
+              <div class="small">Our products are always guaranteed.</div>
               <div class="d-flex justify-content-between">
                 <div class="mt-2">
                   <input
@@ -139,24 +138,112 @@
             </div>
           </div>
         </div>
+
+        <div class="col-lg-3 wow fadeIn" data-wow-delay="100sm">
+          <div class="card shadow-lg">
+            <div class="waves-effect waves-block card_img_my">
+              <img src="./img/mac2.jpg" class="img-fluid" alt="smart" />
+            </div>
+
+            <div class="px-3">
+              <div class="d-flex justify-content-between">
+                <div class="text-muted">MacBook Air</div>
+                <div class="text-success">55$</div>
+              </div>
+              <div class="small">Our products are always guaranteed.</div>
+              <div class="d-flex justify-content-between">
+                <div class="mt-2">
+                  <input
+                    type="number"
+                    value="1"
+                    min="1"
+                    max="10"
+                    class="input_number"
+                  />
+                </div>
+                <button
+                  class="btn btn-md btn-success rounded shadow-none"
+                  id="add_cart2"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 wow fadeIn" data-wow-delay="100sm">
+          <div class="card shadow-lg">
+            <div class="waves-effect waves-block card_img_my">
+              <img src="./img/mac3.webp" class="img-fluid" alt="smart" />
+            </div>
+
+            <div class="px-3">
+              <div class="d-flex justify-content-between">
+                <div class="text-muted">MacBook Pro</div>
+                <div class="text-success">55$</div>
+              </div>
+              <div class="small">Our products are always guaranteed.</div>
+              <div class="d-flex justify-content-between">
+                <div class="mt-2">
+                  <input
+                    type="number"
+                    value="1"
+                    min="1"
+                    max="10"
+                    class="input_number"
+                  />
+                </div>
+                <button
+                  class="btn btn-md btn-success rounded shadow-none"
+                  id="add_cart3"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 wow fadeIn" data-wow-delay="100sm">
+          <div class="card shadow-lg">
+            <div class="waves-effect waves-block card_img_my">
+              <img src="./img/mac4.jpg" class="img-fluid" alt="smart" />
+            </div>
+
+            <div class="px-3">
+              <div class="d-flex justify-content-between">
+                <div class="text-muted">MacBook Air</div>
+                <div class="text-success">55$</div>
+              </div>
+              <div class="small">Our products are always guaranteed.</div>
+              <div class="d-flex justify-content-between">
+                <div class="mt-2">
+                  <input
+                    type="number"
+                    value="1"
+                    min="1"
+                    max="10"
+                    class="input_number"
+                  />
+                </div>
+                <button
+                  class="btn btn-md btn-success rounded shadow-none"
+                  id="add_cart4"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/mdb.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        new WOW().init();
-      });
-      $(function () {
-        $("#add_cart").click(function () {
-          $(".successfully-saved")
-            .css("display", "block")
-            .delay(3000)
-            .fadeOut(500);
-        });
-      });
-    </script>
+    <script src="js/main.js"></script>
+    <script></script>
   </body>
 </html>
