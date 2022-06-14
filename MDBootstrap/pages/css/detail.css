@@ -14,6 +14,16 @@ nav.navbar {
     color: yellow !important;
 }
 
+.dropdown-item:hover {
+    /* color: #000 !important; */
+    background-color: rgb(124, 124, 124) !important;
+}
+
+.dropdown-menu {
+    background-color: #000000cc;
+    box-shadow: 0 0 20px #000 !important;
+}
+
 .search_input {
     color: var(--yellow) !important;
     border-color: var(--yellow) !important;
@@ -34,6 +44,16 @@ nav.navbar {
     background: transparent !important;
 }
 
+.text-muted {
+    color: white !important;
+}
+
+.about_project_bg {
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #000;
+}
+
 .my_images_gallary {
     width: 80px;
     height: 80px;
@@ -49,7 +69,7 @@ nav.navbar {
 
 .main-img {
     width: 100%;
-    height: 400px;
+    height: 350px;
     overflow: hidden;
 }
 
@@ -83,13 +103,115 @@ nav.navbar {
     animation: fadeIn 0.5s ease-in 1 forwards;
 }
 
-@media only screen and (max-width: 770px) {
-    .my_container {
-        padding-top: 80px;
-    }
+.first_sum {
+    color: red;
+    text-decoration: line-through;
+}
+
+.about_project {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* ! left container ! */
+.my_card_inp {
+    background-color: #000 !important;
+    color: white !important;
+    border-radius: 70px 0px 70px 0px;
+}
+
+.visa_cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .visa_cards img {
     width: 50px;
+}
+
+.filtered {
+    cursor: pointer;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+img.filtered:active {
+    -webkit-filter: grayscale(0%) !important;
+    filter: grayscale(0%) !important;
+}
+
+.card_data {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.card_data label {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.card_data label>span {
+    padding-left: 15px;
+}
+
+.my_inputs {
+    color: white !important;
+    border-radius: 30px;
+    border: 1px solid #111;
+    background: transparent;
+    transition: 1s;
+}
+
+.my_inputs:focus {
+    border: 1px solid #111 !important;
+}
+
+.my_data_btn {
+    border-radius: 30px;
+}
+
+.input_data_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input_data_box .my_inputs {
+    width: 100%;
+    max-width: 140px;
+    text-align: center;
+}
+
+.basic_box_img {
+    margin-right: 10px !important;
+}
+
+@media only screen and (max-width: 770px) {
+
+    .input_data_box {
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .my_container {
+        padding-top: 80px;
+    }
+
+    .basic_box_img {
+        margin-right: 0px !important;
+    }
+
 }
