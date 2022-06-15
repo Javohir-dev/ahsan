@@ -11,17 +11,21 @@
 
 html,
 body,
-header,
 #NavBack {
     height: 100%;
 }
 
 header {
+    height: 100vh;
     background: #080606a8;
     background-image: url("https://artmedia.dn.ua/wp-content/uploads/loyalty-program-1.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-blend-mode: overlay;
+}
+
+body {
+    background-color: #f8f8f8;
 }
 
 @media (min-width:560px) and (max-width: 650px) {
@@ -156,6 +160,24 @@ header {
 .successfully-saved.show {
     display: block;
 }
+/* !=================== */
+.successfully-removed {
+    display: none;
+    color: white;
+    z-index: 1090;
+    margin-top: 5px;
+    position: fixed;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-family: monospace;
+    background-color: red;
+    box-shadow: 0 0rem 2rem red;
+    transition: 1s;
+}
+
+.successfully-saved.show {
+    display: block;
+}
 
 /* ! search  !============= */
 .ui-menu {
@@ -178,6 +200,10 @@ header {
 }
 
 /* !============== */
+.card_header {
+    border: 1px solid #ccc;
+}
+
 .card_img_my {
     width: 100%;
     height: 300px;
@@ -193,4 +219,46 @@ header {
 
 .card_img_my img:hover {
     transform: scale(1.2);
+}
+
+span {
+    cursor: pointer;
+}
+
+.number {
+    /* margin: 100px; */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.minus,
+.plus {
+    width: 34px;
+    height: 34px;
+    padding: 5px 5px 8px 5px;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    background: white;
+    transition: .3s;
+}
+
+.minus:active,
+.plus:active {
+    background-color: yellow;
+}
+
+.number input {
+    height: 34px;
+    width: 80px;
+    font-size: 18px;
+    border: 0;
+    text-align: center;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
 }
