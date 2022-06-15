@@ -3,7 +3,7 @@ $(document).ready(function () {
 });
 $(function () {
   $(".add_cart").click(function () {
-    $(".successfully-saved").css("display", "block").delay(500).fadeOut(100);
+    $(".successfully-saved").css("display", "block").delay(800).fadeOut(100);
   });
 });
 // !
@@ -12,7 +12,7 @@ $(document).ready(function () {
 });
 $(function () {
   $(".card_removed").click(function () {
-    $(".successfully-removed").css("display", "block").delay(500).fadeOut(100);
+    $(".successfully-removed").css("display", "block").delay(800).fadeOut(100);
   });
 });
 // ! search uchun qidiruv tizimi.
@@ -60,3 +60,12 @@ $(document).ready(function () {
     return false;
   });
 });
+// ! btn sotib olish
+function handleDropDown(elementId) {
+  const element = document.getElementById("languages");
+  if (element.style.display === "block") {
+    element.style.display = "none";
+  } else {
+    element.style.display = "block";
+  }
+};

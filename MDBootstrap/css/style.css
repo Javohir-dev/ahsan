@@ -154,12 +154,13 @@ body {
     font-family: monospace;
     background-color: limegreen;
     box-shadow: 0 0rem 2rem lime;
-    transition: 1s;
+    transition: .5s;
 }
 
 .successfully-saved.show {
     display: block;
 }
+
 /* !=================== */
 .successfully-removed {
     display: none;
@@ -172,7 +173,7 @@ body {
     font-family: monospace;
     background-color: red;
     box-shadow: 0 0rem 2rem red;
-    transition: 1s;
+    transition: .5s;
 }
 
 .successfully-saved.show {
@@ -200,18 +201,41 @@ body {
 }
 
 /* !============== */
+.best_price {
+    color: #f3ef01;
+    font-size: 13px;
+    display: inline-block;
+    font-family: sans-serif;
+    border-radius: 5px;
+    background: #1a1a1a;
+}
+
 .card_header {
-    border: 1px solid #ccc;
+    width: 270px;
+    border: 0;
+    border-radius: 5px;
+    border-right: 1px solid #ccc;
+    transition: .4s;
+}
+
+.card_header:hover {
+    border-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #333;
 }
 
 .card_img_my {
+
     width: 100%;
-    height: 300px;
+    /* height: 200px; */
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card_img_my img {
-    width: 100%;
+    width: 150px;
     height: 100%;
     object-fit: cover;
     transition: .3s;
@@ -221,6 +245,10 @@ body {
     transform: scale(1.2);
 }
 
+.product_sum {
+    font-weight: 600;
+}
+
 span {
     cursor: pointer;
 }
@@ -228,7 +256,7 @@ span {
 .number {
     /* margin: 100px; */
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 8px;
     overflow: hidden;
 }
 
@@ -261,4 +289,22 @@ span {
     border-radius: 4px;
     display: inline-block;
     vertical-align: middle;
+}
+
+.is-hidden-initially {
+    display: none;
+}
+
+.icon_header {
+    margin-bottom: 20px;
+    padding: 10px 10px 5px 10px;
+    border-radius: 5px;
+    background-color: #f3e301;
+    color: #333 !important;
+    transition: .4s;
+}
+
+.icon_header:active {
+    color: white !important;
+    background-color: #aa8b00;
 }
