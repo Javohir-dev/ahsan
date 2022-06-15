@@ -10,6 +10,10 @@ nav.navbar {
     background-color: #00000088 !important;
 }
 
+input {
+    border: 0 ;
+}
+
 .nav-item a {
     color: yellow !important;
 }
@@ -51,7 +55,7 @@ nav.navbar {
 .about_project_bg {
     border-radius: 20px;
     overflow: hidden;
-    background-color: #000;
+    background-color: #0c616e;
 }
 
 .my_images_gallary {
@@ -59,7 +63,7 @@ nav.navbar {
     height: 80px;
     margin-right: 5px;
     cursor: pointer;
-    z-index: 9999;
+    z-index: 1;
     overflow: hidden;
 }
 
@@ -116,9 +120,9 @@ nav.navbar {
 
 /* ! left container ! */
 .my_card_inp {
-    background-color: #000 !important;
+    background-color: #0c616e !important;
     color: white !important;
-    border-radius: 70px 0px 70px 0px;
+    border-radius: 20px;
 }
 
 .visa_cards {
@@ -169,13 +173,17 @@ img.filtered:active {
 .my_inputs {
     color: white !important;
     border-radius: 30px;
-    border: 1px solid #111;
+    border: 1px solid #ccc !important;
     background: transparent;
     transition: 1s;
 }
 
 .my_inputs:focus {
-    border: 1px solid #111 !important;
+    background: #ffffff90;
+}
+
+.my_inputs::-webkit-input-placeholder {
+    color: white;
 }
 
 .my_data_btn {

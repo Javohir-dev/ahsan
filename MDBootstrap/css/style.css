@@ -64,11 +64,6 @@ header {
     background-color: transparent !important;
 }
 
-.search_input:focus {
-    color: pink !important;
-    border: 1px solid pink;
-}
-
 .search_input::-webkit-input-placeholder {
     color: white !important;
 }
