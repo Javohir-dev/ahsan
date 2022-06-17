@@ -1,12 +1,30 @@
 :root {
-    --color1: #d100d1;
-    --color2: #5349B6;
+    --color1: yellow;
+    --color2: #fff;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+    cursor: pointer;
+    width: .9rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #151b36;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--color1);
+}
+
+*::selection {
+    background: #000000;
+    color: var(--color1);
 }
 
 html,
@@ -17,10 +35,12 @@ body,
 
 header {
     height: 100vh;
-    background: #080606a8;
-    background-image: url("https://artmedia.dn.ua/wp-content/uploads/loyalty-program-1.jpg");
+    background: #080606b2;
+    background-image: url("https://want.design/wp-content/uploads/2012/12/vicotek_service_brandbook.jpg");
     -webkit-background-size: cover;
     background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     background-blend-mode: overlay;
 }
 
@@ -42,8 +62,8 @@ body {
 }
 
 .top-nav-collapse {
-    box-shadow: 0 0 20px var(--color2);
-    background-color: var(--color2);
+    box-shadow: 0 0 20px var(--color1);
+    /* background-color: var(--color2); */
 }
 
 .symbol_burger {
@@ -80,8 +100,9 @@ body {
 }
 
 .header_btn:hover {
-    color: #c7c7c7;
-    border: 1px solid indigo;
+    color: var(--color1);
+    border: 1px solid white;
+    background-color: #ffffff3d;
 }
 
 .user_img_my {
@@ -107,7 +128,7 @@ body {
     border: none;
     padding: 0 !important;
     margin-top: 10px !important;
-    box-shadow: 0 0 20px pink;
+    box-shadow: 0 0 20px var(--color1);
     background-color: rgb(255, 255, 255, 0.60);
 }
 
@@ -122,18 +143,18 @@ body {
     border: 1px solid silver;
 }
 
-.input_number:focus {
-    color: limegreen;
+input.input_number:focus {
+    color: limegreen !important;
     border: 1px solid limegreen;
 }
 
 /* !=============================== */
-.header_text_my {
-    color: #47817E !important;
+.header_title_text {
+    color: var(--color1);
 }
 
-.header_title_text {
-    color: #0071D8;
+.header_text_my {
+    color: var(--color2) !important;
 }
 
 .header_alert {
@@ -201,6 +222,29 @@ body {
 }
 
 /* !============== */
+.my_all_card {
+    display: flex;
+}
+
+.card_hover {
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.card_hover:hover {
+    box-shadow: 0 0 10px #ccc;
+
+}
+
+.my_card {
+    max-width: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+
 .best_price {
     color: #f3ef01;
     font-size: 13px;
@@ -210,18 +254,20 @@ body {
     background: #1a1a1a;
 }
 
-.card_header {
-    width: 270px;
-    border: 0;
-    border-radius: 5px;
-    border-right: 1px solid #ccc;
-    transition: .4s;
+
+.my_img_container img {
+    width: 100%;
+
 }
 
-.card_header:hover {
-    border-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #333;
+.my_img_container {
+    max-width: 100px;
+    height: 200px;
+    /* margin: auto; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card_img_my {

@@ -68,4 +68,4 @@ function handleDropDown(elementId) {
   } else {
     element.style.display = "block";
   }
-};
+}
