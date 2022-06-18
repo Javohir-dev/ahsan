@@ -1,0 +1,45 @@
+button {
+    outline: none;
+}
+
+input:focus {
+    border: none !important;
+}
+
+.btn_container_shop {
+    display: flex;
+}
+
+.my_btn {
+    color: yellow;
+    border: 0;
+    background-color: #f0e00000;
+}
+
+.my_btn_red {
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #ff0000;
+}
+
+.my_btn_red:hover {
+    color: #ffff00;
+    background-color: #ff0000;
+}
+
+.show-cart li {
+    display: flex;
+}
+
+.shop_card {
+    width: 20rem;
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+}
