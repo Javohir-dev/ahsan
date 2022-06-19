@@ -342,15 +342,16 @@ span {
 }
 
 .icon_header {
+    width: 100%;
     margin-bottom: 20px;
     padding: 10px 10px 5px 10px;
+    text-align: center;
     border-radius: 5px;
-    background-color: #f3e301;
     color: #333 !important;
-    transition: .4s;
+    background-color: #f3e301;
+    transition: .1s;
 }
 
 .icon_header:active {
     color: white !important;
-    background-color: #aa8b00;
 }
