@@ -88,6 +88,10 @@ body {
     background-color: transparent !important;
 }
 
+input.search_input:focus {
+    border: 1px solid #fff !important;
+}
+
 .search_input::-webkit-input-placeholder {
     color: white !important;
 }

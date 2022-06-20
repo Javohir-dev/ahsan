@@ -145,6 +145,14 @@ $(".add-to-cart").click(function (event) {
   displayCart();
 });
 
+$('.card_removed').click(function (event) {
+  event.preventDefault();
+  var name = $(this).data('name');
+  var price = Number($(this).data('price'));
+  shoppingCart.removeItemFromCart(name, price, 1);
+  displayCart();
+});
+
 // Clear items
 $(".clear-cart").click(function () {
   shoppingCart.clearCart();
