@@ -145,10 +145,10 @@ $(".add-to-cart").click(function (event) {
   displayCart();
 });
 
-$('.card_removed').click(function (event) {
+$(".cart_remmove").click(function (event) {
   event.preventDefault();
-  var name = $(this).data('name');
-  var price = Number($(this).data('price'));
+  var name = $(this).data("name");
+  var price = Number($(this).data("price"));
   shoppingCart.removeItemFromCart(name, price, 1);
   displayCart();
 });
@@ -226,3 +226,5 @@ $(".show-cart").on("change", ".item-count", function (event) {
 });
 
 displayCart();
+
+// ! card search image
