@@ -9,12 +9,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Mdbootstrap</title>
     <link rel="icon" href="./img/my-logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./css/jquery-ui.css" />
     <link rel="stylesheet" href="css/mdb.min.css" />
     <link rel="stylesheet" href="./icons/icons.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="./css/shopcard.css" />
+
   </head>
   <body>
     <div class="header_alert">
@@ -72,7 +75,7 @@
           </form>
 
           <div class="mb-2 my-lg-0">
-            <div class="nav-item dropdown">
+            <div class="nav-item dropdown user">
               <a
                 href="#0"
                 class="nav-link ml-lg-2 p-0"
@@ -123,97 +126,123 @@
         </div>
       </div>
     </header>
-    <main class="pt-4">
-      <div class="row d-flex m-auto justify-content-center py-3 my_all_card">
-        <!-- !================================ -->
-        <div class="col-lg-3 p-5" data-wow-delay="100sm">
+    <main class="mt-4">
+      <!-- !================================ -->
+      <section id="owl-1">
+        <div class="owl-carousel owl-theme">
+
           <div class="card_hover">
             <div class="best_price px-2 mt-1 ml-1">Zo'r narx</div>
             <div class="my_card">
               <div class="my_img_container">
-                <a href="./pages/detail.html">
-                  <img src="./img/phone.jpg" alt="smart" />
+                <a
+                  href="./pages/detail.html"
+                  class="waves-effect waves-block waves-light"
+                >
+                  <img class="activator" src="./img/phone.jpg" alt="smart" />
                 </a>
               </div>
 
               <div class="px-3">
                 <div class="d-flex justify-content-between">
-                  <div class="text-muted small">Galaxy A02 2/32Gb Black</div>
+                  <div class="text-muted small">Galaxy A72 6/128Gb Black</div>
                 </div>
                 <div class="text-dark pt-3 h5 product_sum">
                   <span>$120 </span>
                 </div>
                 <!-- *                             -->
-                <div class="d-flex card_flex">
-                  <span class="icon_header" onClick="handleDropDown()">
-                    <i class="fi-sr-shopping-cart-add"></i>
-                  </span>
-
-                  <div id="languages" class="is-hidden-initially">
-                    <div class="number d-flex">
-                      <!-- <span class="minus cort_remove">&#8722;</span> -->
-                      <input type="text" value="0" />
-                      <span
-                        data-name="Orange"
-                        data-price="120"
-                        class="add-to-cart plus add_cart"
-                        >+</span
+                <div class="d-flex card_flex justify-content-start">
+                  <!-- !========== -->
+                    <div class="nav-item dropdown shop">
+                      <a
+                        href="#0"
+                        class="nav-link mt-1 p-0"
+                        id="navbarDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
                       >
+                        <span class="icon_header">
+                          <i class="fi-sr-shopping-cart-add"></i>
+                        </span>
+                      </a>
+                      <div
+                        class="dropdown-menu dropdown-menu-left overflow-hidden"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <div class="number d-flex">
+                          <span class="minus cort_remove">&#8722;</span>
+                          <input type="text" value="0" />
+                          <span
+                            data-name="Orange"
+                            data-price="120"
+                            class="add-to-cart plus add_cart"
+                            >+</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  <!-- !======= -->
                 </div>
                 <!-- *                             -->
               </div>
             </div>
           </div>
-        </div>
-        <!-- todo:================ -->
-        <!-- ! Modal -->
-        <div
-          class="modal fade"
-          id="cart"
-          tabindex="-1"
-          role="dialog"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">All product</h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <table class="show-cart table"></table>
-                <div>Total price: $<span class="total-cart"></span></div>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-dismiss="modal"
-                >
-                  Close
-                </button>
-                <button type="button" class="btn btn-primary">Order now</button>
+        </section>
+
+          <!-- todo:================ -->
+          <!-- ! Modal -->
+          <div
+            class="modal fade"
+            id="cart"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    All product
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="show-cart table"></table>
+                  <div>Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Order now
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- todo:================ -->
-      </div>
+          <!-- todo:================ -->
+        </div>
     </main>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
     <script src="js/mdb.min.js"></script>
     <script src="./js/jquery-ui.js"></script>
     <script src="./js/main.js"></script>

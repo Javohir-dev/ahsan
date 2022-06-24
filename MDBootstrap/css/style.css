@@ -128,7 +128,7 @@ input.search_input:focus {
     background-color: lime;
 }
 
-.dropdown-menu {
+.user .dropdown-menu {
     border: none;
     padding: 0 !important;
     margin-top: 10px !important;
@@ -297,6 +297,7 @@ input.input_number:focus {
 
 .product_sum {
     font-weight: 600;
+    
 }
 
 span {
@@ -304,7 +305,7 @@ span {
 }
 
 .number {
-    /* margin: 100px; */
+    width: 100%;
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
@@ -332,7 +333,7 @@ span {
 
 .number input {
     height: 34px;
-    width: 80px;
+    width: 100%;
     font-size: 18px;
     border: 0;
     text-align: center;
@@ -358,4 +359,49 @@ span {
 
 .icon_header:active {
     color: white !important;
+}
+
+/* todo=-=================================  */
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-dot {
+    font-family: 'Material Icons';
+    font-size: 4rem;
+}
+
+.owl-nav {
+    height: 0;
+    margin: 0;
+}
+
+.owl-carousel .owl-nav .owl-prev:before {
+    font-family: "Material Icons";
+    content: "<";
+    color: white;
+    font-size: 4rem;
+    margin-left: 16px;
+    position: absolute;
+    top: 40%;
+    left: 0px;
+    height: auto;
+}
+
+.owl-carousel .owl-nav .owl-next:after {
+    font-family: "Material Icons";
+    content: ">";
+    color: white;
+    font-size: 4rem;
+    margin-right: 16px;
+    position: absolute;
+    top: 40%;
+    right: 0px;
+    height: 100%;
+}
+
+/*  */
+.shop .dropdown-menu {
+    border: none;
+    padding: 0 !important;
+    margin: 100px 10px 0px 38px !important;
+    background-color: rgb(255, 255, 255, 0.60);
 }
