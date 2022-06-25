@@ -402,6 +402,7 @@ span {
 .shop .dropdown-menu {
     border: none;
     padding: 0 !important;
-    margin: 100px 10px 0px 38px !important;
+    display: inline-block !important;
+    margin: 127px 10px 0px 38px !important;
     background-color: rgb(255, 255, 255, 0.60);
 }
