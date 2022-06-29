@@ -33,6 +33,14 @@ body,
     height: 100%;
 }
 
+body {
+    font-family: sans-serif !important;
+}
+
+.my_color {
+    color: var(--color1);
+}
+
 header {
     height: 100vh;
     background: #080606b2;
@@ -46,6 +54,9 @@ header {
 
 body {
     background-color: #f8f8f8;
+}
+main {
+    margin-bottom: 20px;
 }
 
 @media (min-width:560px) and (max-width: 650px) {
@@ -297,7 +308,6 @@ input.input_number:focus {
 
 .product_sum {
     font-weight: 600;
-    
 }
 
 span {
@@ -353,7 +363,7 @@ span {
     text-align: center;
     border-radius: 5px;
     color: #333 !important;
-    background-color: #f3e301;
+    background-color: var(--color1);
     transition: .1s;
 }
 
@@ -405,4 +415,47 @@ span {
     display: inline-block !important;
     margin: 127px 10px 0px 38px !important;
     background-color: rgb(255, 255, 255, 0.60);
+}
+
+/* ! FOOTER========================= */
+.my_footer {
+    padding: 20px 0 !important;
+    color: var(--color1);
+    background: #3A3A3E;
+}
+
+.ftr_logo {
+    color: white;
+    align-items: center;
+}
+
+.ftr_logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.ftr_link {
+    color: var(--color1) !important;
+}
+
+.ftr_icon {
+    padding-top: 5px !important;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    font-size: 23px !important;
+    box-shadow: 0 0 0 3px white;
+    transition: .3s;
+}
+
+
+.ftr_icon:hover {
+    color: white;
+    box-shadow: 0 0 0 3px var(--color1);
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
 }
